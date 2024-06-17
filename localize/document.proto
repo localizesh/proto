@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package localize;
+
+import "localize/segment.proto";
+import "google/protobuf/struct.proto";
+
+message Document {
+  string layout = 1;
+  repeated Segment segments = 2;
+  google.protobuf.Struct metadata = 3;
+}

@@ -1,0 +1,5 @@
+version: v2
+name: buf.build/localize/localize
+lint:
+  use:
+    - BASIC
