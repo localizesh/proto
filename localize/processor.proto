@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package localize;
+
+import "google/protobuf/struct.proto";
+import "localize/document.proto";
+
+message ParseRequest {
+  string resource = 1;
+  google.protobuf.Struct context = 2;
+}
+
+message ParseResponse {
+  localize.Document document = 1;
+}
+
+message StringifyRequest {
+  localize.Document document = 1;
+  google.protobuf.Struct context = 2;
+}
+
+message StringifyResponse {
+  string resource = 1;
+}
+
+service Processor {
+  rpc Parse(ParseRequest) returns (ParseResponse) {}
+  rpc Stringify(StringifyRequest) returns (StringifyResponse) {}
+}
