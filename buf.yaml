@@ -1,5 +1,5 @@
 version: v2
-name: buf.build/localize/localize
+name: buf.build/localizesh/localize
 lint:
   use:
     - BASIC
