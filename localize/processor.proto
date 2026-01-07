@@ -22,8 +22,3 @@ message StringifyRequest {
 message StringifyResponse {
   string resource = 1;
 }
-
-service Processor {
-  rpc Parse(ParseRequest) returns (ParseResponse) {}
-  rpc Stringify(StringifyRequest) returns (StringifyResponse) {}
-}

@@ -6,7 +6,7 @@ import "localize/segment.proto";
 import "google/protobuf/struct.proto";
 
 message Document {
-  string layout = 1;
-  repeated Segment segments = 2;
-  google.protobuf.Struct metadata = 3;
+  repeated Segment segments = 1;
+  google.protobuf.Struct layout = 2;
+  optional google.protobuf.Struct metadata = 3;
 }
