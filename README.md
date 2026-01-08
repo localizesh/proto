@@ -34,3 +34,7 @@ A single unit of text for translation.
 ### `Tag`
 Attributes for a specific tag marker within a segment.
 *   `attrs`: Key-value pairs of attributes for the tag (e.g., `href`, `style`).
+
+## License
+
+[Apache 2.0](LICENSE)
